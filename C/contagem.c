@@ -1,17 +1,18 @@
 #include <stdio.h>
+#include <cs50.h>
+
+void contar_de_zero_ate_n(int n);
 
 int main(void)
 {
-    int i = 1;
-    printf("Usando while:\n");
-    while (i <= 3)
+    int numero_maximo = get_int("Digite até quanto quer contar: ");
+    contar_de_zero_ate_n(numero_maximo);
+}
+
+void contar_de_zero_ate_n(int n)
+{
+    for (int i = 0; i <= n; i++)
     {
         printf("%i\n", i);
-        i++;
-    }
-    printf("Usando for:\n");
-    for (int j = 1; j <= 3; j++)
-    {
-        printf("%i\n", j);
     }
 }
