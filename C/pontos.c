@@ -3,12 +3,13 @@
 
 int main(void)
 {
+    int ponto_referencia = 2;
     int pontos = get_int("Digite a quantidade de pontos que você perdeu: ");
-    if (pontos < 2)
+    if (pontos < ponto_referencia)
     {
         printf("Você perdeu menos pontos do que eu!\n");
     }
-    else if (pontos > 2)
+    else if (pontos > ponto_referencia)
     {
         printf("Você perdeu mais pontos do que eu!\n");
     }
