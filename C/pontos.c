@@ -3,13 +3,13 @@
 
 int main(void)
 {
-    int ponto_referencia = 2;
+    const int PONTO_REFERENCIA = 2;
     int pontos = get_int("Digite a quantidade de pontos que você perdeu: ");
-    if (pontos < ponto_referencia)
+    if (pontos < PONTO_REFERENCIA)
     {
         printf("Você perdeu menos pontos do que eu!\n");
     }
-    else if (pontos > ponto_referencia)
+    else if (pontos > PONTO_REFERENCIA)
     {
         printf("Você perdeu mais pontos do que eu!\n");
     }
